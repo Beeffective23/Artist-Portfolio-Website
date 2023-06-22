@@ -1,0 +1,470 @@
+ul {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav * {
+  box-sizing: border-box;
+}
+.navCont {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1030;
+}
+.nav-link {
+  color: rgb(101, 101, 101);
+  position: relative;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: "Shadows Into Light", cursive;
+
+  font-weight: bolder;
+}
+svg.svg-inline--fa.fa-cart-shopping {
+  padding-top: 11px;
+  color: black;
+  height: 20px;
+  cursor: pointer;
+}
+.nav-item {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0px 70px;
+  padding: 0;
+}
+
+.nav-link::before {
+  position: absolute;
+  transition: all 0.2s cubic-bezier(0.56, 0.49, 0.4, 1.48);
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #6f6f70;
+  border-radius: 13px;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav-link:focus::before {
+  opacity: 1;
+  width: 100%;
+}
+.nav-link:hover {
+  color: black;
+}
+
+svg.svg-inline--fa.fa-cart-shopping:hover {
+  color: #2980b9;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.header {
+  height: 700px;
+}
+
+.email {
+  color: white;
+  font-family: "Abel", sans-serif;
+  margin-left: 20px;
+}
+.instagram {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/instagram BW.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.facebook {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/facebook BW.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.Mail {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/mail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.letterMail {
+  position: relative;
+  bottom: 20px;
+  font-size: 11px;
+  right: 22px;
+}
+.Mail:hover {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/mail-open.png");
+}
+
+.facebook:hover {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/facebook.png");
+}
+
+.instagram:hover {
+  background-image: url("/Users/petertsekov/Desktop/Projects/Test2/my-app/src/Pictures/instagram.png");
+}
+
+.painting1 {
+  cursor: pointer;
+}
+.paintings {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+.painting {
+  transition: transform 0.3s;
+}
+.painting:hover {
+  transform: scale(1.04);
+}
+.Pictures {
+  margin-top: 120px;
+}
+
+.morePaintCont {
+  text-align: center;
+}
+.morePaintRow {
+  width: fit-content;
+}
+
+.moreVidLink {
+  color: black;
+  width: fit-content;
+  display: block;
+}
+
+.videoCont {
+  margin-top: 150px;
+}
+
+.contactFoot {
+  margin-top: 300px;
+}
+
+.contact {
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 90px;
+}
+.contactContainer {
+  margin-top: 170px;
+}
+
+.colFooter {
+  width: fit-content;
+  height: 30px;
+  padding: 0px;
+  margin-right: 20px;
+}
+
+.rights::before {
+  display: block;
+  content: "";
+  background-color: #5b5b5b;
+  opacity: 0.4;
+  width: 100%;
+  height: 1px;
+}
+.paragRights {
+  margin-top: 10px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.carousel {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.carosCont {
+  margin-top: 110px;
+}
+
+.saleFont {
+  font-family: "Abel", sans-serif;
+  font-size: 17px;
+}
+.closeCarousel {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+.closeCarousel:hover {
+  color: #2980b9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.prevButton,
+.nextButton {
+  width: 50px;
+  cursor: pointer;
+}
+.prevButton {
+  position: fixed;
+  top: 400px;
+  left: 200px;
+}
+.nextButton {
+  position: fixed;
+  right: 200px;
+  top: 400px;
+}
+@media (max-width: 1200px) {
+  .prevButton {
+    left: 50px;
+  }
+  .nextButton {
+    right: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .prevButton,
+  .nextButton {
+    top: 300px;
+  }
+}
+@media (max-width: 574px) {
+  .prevButton {
+    left: 10px;
+  }
+  .nextButton {
+    right: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .prevButton,
+  .nextButton {
+    top: 390px;
+    width: 30px;
+  }
+  .carosCont {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .prevButton,
+  .nextButton {
+    top: 350px;
+    width: 30px;
+  }
+  .carosCont {
+    margin-top: 250px;
+  }
+}
+
+input {
+  margin-left: 10px;
+  border: 1px solid rgb(176, 175, 175);
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  padding: 5px 0px;
+}
+
+textarea {
+  outline: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.formEL {
+  margin-bottom: 30px;
+}
+
+.videoArray {
+  width: 30vw;
+  height: 17vw;
+}
+
+.price,
+.posterDescription {
+  margin-top: 10px;
+}
+
+.posterImg {
+  width: 300px;
+  height: 420px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.StoreRow {
+  padding-top: 90px;
+}
+
+.checkOutImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+}
+.checkOutBorder {
+  border-bottom: 1px solid rgb(176, 175, 175);
+  margin-bottom: 70px;
+  align-items: center;
+  font-weight: bold;
+}
+.productInBskt {
+  margin-top: 130px;
+}
+.removePainting {
+  float: right;
+  background-color: white;
+  border: none;
+}
+.removePainting:hover {
+  color: #2980b9;
+  transition: 0.3s;
+}
+.container.mptyBskt {
+  text-align: center;
+  width: fit-content;
+  margin-top: 80px;
+  font-family: "Abel", sans-serif;
+}
+
+.numOfProducts {
+  cursor: default;
+}
+.basketImg {
+  margin: 5px 0px;
+}
+.salePaintingImg {
+  margin-bottom: 100px;
+}
+.saleDescrCont {
+  position: relative;
+  top: 100px;
+}
+.btnRow {
+  position: relative;
+  top: 40px;
+}
+.decorImgCont {
+  margin-bottom: 40px;
+  transition: 1s;
+  opacity: 0;
+}
+.decorImgCont.show {
+  opacity: 1;
+}
+.allImgs {
+  margin-top: 10vw;
+}
+.decorImg {
+  width: inherit;
+  height: auto;
+}
+.retToStore {
+  margin-top: 30px;
+  border-style: solid;
+  background-color: #999f9b;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+}
+
+.addToBskt {
+  background-color: black;
+  color: white;
+  height: 65px;
+  width: 150px;
+}
+
+.checkoutBtn {
+  width: 280px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  margin-bottom: 70px;
+}
+.subtotal {
+  font-size: 21px;
+  font-weight: 600;
+}
+.sub {
+  margin-right: 140px;
+}
+.social1 {
+  margin-top: 50vh;
+}
+.homeBtns {
+  border: none;
+  width: 250px;
+  height: 50px;
+  background-color: #000000;
+  cursor: pointer;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .homeBtns {
+    width: 150px;
+    height: 70px;
+  }
+}
+
+.homeBtns:hover {
+  background-color: #383a3b;
+}
+.filterTitlePrice {
+  opacity: 0;
+  transition: 0.2s;
+}
+.filterTitlePrice:hover {
+  opacity: 0.9;
+}
+
+.videoHomePlayer {
+  height: 39vw;
+}
+.filterTitle {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.filterTitlePrice:hover .filterTitle {
+  animation: shake 2s infinite;
+}
+@keyframes shake {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -10px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+.rowSocial {
+  margin-top: 50px;
+}
+.myImg {
+  width: auto;
+  height: 43vw;
+}
+.myVid {
+  width: 45vw;
+  height: auto;
+}
+.retToStoreCol:hover {
+  color: #2980b9;
+  transition: 0.2s;
+}
